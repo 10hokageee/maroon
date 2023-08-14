@@ -1,0 +1,33 @@
+$dark-blue: #122947;
+$gray: #9A9DA0;
+$border-color: #B3BAC1;
+$white: #fff;
+
+%transition {
+  transition: background-color 0.3s ease-in-out,
+    text-decoration 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    opacity 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out,
+    fill 0.3s ease-in-out, border 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    translate 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+%mplus-regular {
+  font-family: "MPLUS1p", sans-serif;
+  font-weight: 400;
+}
+
+%mplus-medium {
+  font-family: "MPLUS1p", sans-serif;
+  font-weight: 500;
+}
+
+%raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+%raleway-medium  {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
