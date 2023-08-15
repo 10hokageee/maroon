@@ -5,7 +5,6 @@
 @import "reset";
 @import "libs";
 
-
 .header {
   background-repeat: no-repeat;
   background-position: center;
@@ -37,7 +36,7 @@
     border: 1px solid #b3bac1;
     font-size: 16px;
     line-height: 140%;
-    @extend %mplus-medium; 
+    @extend %mplus-medium;
     display: inline-block;
   }
 
@@ -68,7 +67,6 @@
     }
   }
 }
-
 
 .header-menu {
   display: flex;
@@ -103,7 +101,233 @@
     & svg {
       width: 18px;
       height: 21px;
+      fill: $dark-blue;
+      @extend %transition;
     }
+
+    &:hover svg {
+      opacity: 0.6;
+    }
+  }
+}
+
+.benefits {
+  padding: 140px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 214px;
+  }
+
+  &__title {
+    @extend %raleway-medium;
+    font-size: 32px;
+    margin-bottom: 30px;
+    line-height: 130%;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 145%;
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    padding-bottom: 37px;
+    position: relative;
+  }
+
+  .slick-next,
+  .slick-prev {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    & svg {
+      stroke: $dark-blue;
+      width: 26px;
+      height: 12px;
+    }
+  }
+
+  .slick-next {
+    transform: scale(-1);
+    right: 57px;
+  }
+
+  .slick-slide {
+    width: 230px !important;
+    margin-right: 30px;
+  }
+
+  .slick-list {
+    height: 312px;
+    max-width: 748px;
+  }
+
+  &__item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 0 52px 25px 52px;
+    min-height: 312px;
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__item-content {
+    margin-top: auto;
+  }
+
+  &__item-title {
+    font-size: 16px;
+    @extend %raleway-medium;
+    line-height: 145%;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    color: $gray;
+    font-size: 13px;
+    line-height: 145%;
+  }
+
+  &__item-link {
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: 145%;
+  }
+}
+
+.promo {
+  padding-bottom: 140px;
+
+  &__wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 81px 0;
+  }
+
+  &__content {
+    max-width: 284px;
+    margin-left: auto;
+    margin-right: 115px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}
+
+.info {
+  background-color: #f4f1ed;
+  padding-bottom: 140px;
+
+  &__inner {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 670px 451px;
+    padding: 23px 0;
+  }
+
+  &__content {
+    max-width: 346px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    max-width: 329px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    margin-top: 25px;
+  }
+}
+
+.advertisement {
+  padding-bottom: 140px;
+
+  &__content {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 0;
+  }
+
+  &__text {
+    font-size: 32px;
+    @extend %raleway-medium;
+    line-height: 125%;
+    max-width: 761px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+.join-block {
+padding-bottom: 140px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 71px;
+  }
+
+  &__content {
+    max-width: 381px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts {
+ padding-bottom: 90px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    margin-bottom: 35px;
+  }
+
+  &__list-address{
+    max-width: 256px;
+  }
+
+  &__list-subtitle {
+     @extend %mplus-medium;
+     margin-bottom: 10px;
+     display: block;
   }
 }
 
@@ -136,40 +360,6 @@
 
   &__logo {
     margin-right: 70px;
-  }
-
-  .contact-socials {
-    display: flex;
-    align-items: center;
-
-    &__item:not(:last-child) {
-      margin-right: 15px;
-    }
-
-    &__link {
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      @extend %transition;
-
-      & svg {
-        width: 20px;
-        height: 20px;
-        fill: $dark-blue;
-        @extend %transition;
-      }
-
-      &:hover {
-        background-color: $dark-blue;
-      }
-
-      &:hover svg {
-        fill: $white;
-      }
-    }
   }
 
   .footer-bottom {

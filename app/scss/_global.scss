@@ -38,3 +38,77 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.btn {
+  padding: 13px 27px;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+  font-size: 16px;
+  line-height: 140%;
+  @extend %mplus-medium; 
+  display: inline-block;
+  @extend %transition;
+
+  &:hover {
+    background-color: $dark-blue;
+    color: $white
+  }
+}
+
+.title {
+  @extend %raleway-medium;
+  font-size: 32px;
+  margin-bottom: 30px;
+  line-height: 130%;
+}
+
+.contact-socials {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    @extend %transition;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+      fill: $dark-blue;
+      @extend %transition;
+    }
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+
+    &:hover svg {
+      fill: $white;
+    }
+  }
+}
+
+.link {
+  @extend %transition;
+  text-decoration: underline transparent;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  @extend %transition;
+    
+  &:hover {
+    opacity: 0.7;
+  }
+}
