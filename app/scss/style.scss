@@ -285,7 +285,7 @@
 }
 
 .join-block {
-padding-bottom: 140px;
+  padding-bottom: 140px;
 
   &__inner {
     display: flex;
@@ -308,7 +308,7 @@ padding-bottom: 140px;
 }
 
 .contacts {
- padding-bottom: 90px;
+  padding-bottom: 90px;
 
   &__inner {
     display: flex;
@@ -320,14 +320,113 @@ padding-bottom: 140px;
     margin-bottom: 35px;
   }
 
-  &__list-address{
+  &__list-address {
     max-width: 256px;
   }
 
   &__list-subtitle {
-     @extend %mplus-medium;
-     margin-bottom: 10px;
-     display: block;
+    @extend %mplus-medium;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+.catalog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    display: inline-block;
+
+    &--active {
+      background-color: $dark-blue;
+      color: $white;
+    }
+  }
+
+  &__filter {
+    display: none;
+    margin-bottom: 60px;
+    @extend %transition;
+
+    &--show {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__subtitle {
+    @extend %mplus-medium;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  &__form:not(:last-child) {
+    margin-right: 80px;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    color: $dark-blue;
+
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__text {
+    padding-left: 24px;
+  }
+
+  &__box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__input {
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+
+    &:checked + .catalog-top__checkbox::after {
+      opacity: 1;
+    }
+  }
+
+  &__checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: $dark-blue;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      display: block;
+      opacity: 0;
+      @extend %transition;
+    }
   }
 }
 
