@@ -11,10 +11,11 @@
   background-size: cover;
   padding-bottom: 70px;
 
+
   &__content-items {
-    padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    padding-top: 138px;
   }
 
   &__content-title {
@@ -109,10 +110,14 @@
       opacity: 0.6;
     }
   }
+
+  &__link--active {
+   color: black;
+  }
 }
 
 .benefits {
-  padding: 140px 0;
+  
 
   &__inner {
     display: flex;
@@ -211,7 +216,7 @@
 }
 
 .promo {
-  padding-bottom: 140px;
+
 
   &__wrapper {
     background-position: center;
@@ -233,7 +238,7 @@
 
 .info {
   background-color: #f4f1ed;
-  padding-bottom: 140px;
+ 
 
   &__inner {
     background-position: right;
@@ -264,7 +269,7 @@
 }
 
 .advertisement {
-  padding-bottom: 140px;
+
 
   &__content {
     background-position: center;
@@ -285,7 +290,7 @@
 }
 
 .join-block {
-  padding-bottom: 140px;
+  
 
   &__inner {
     display: flex;
@@ -328,6 +333,17 @@
     @extend %mplus-medium;
     margin-bottom: 10px;
     display: block;
+  }
+}
+
+.catalog {
+ padding-top: 100px;
+
+  &__list-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -427,6 +443,261 @@
       opacity: 0;
       @extend %transition;
     }
+  }
+}
+
+.addition {
+  text-align: center;
+
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+}
+
+.product {
+  transition: 0.3s all;
+ 
+
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 70px;
+  }
+
+  &__form {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &__form-title {
+    margin-bottom: 0;
+    & span {
+      color: $gray;
+      font-size: 16px;
+      margin-bottom: 45px;
+      display: block;
+    }
+  }
+
+  &__form-info {
+    max-width: 303px;
+    display: block;
+    margin-bottom: 45px;
+  }
+
+  &__form-text {
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2;
+    font-size: 14px;
+  }
+
+  &__form-subtitle {
+    @extend %mplus-medium;
+    font-size: 18px;
+  }
+
+  .transition,
+  &__form-text,
+  &__form-item &__form-checkbox:before,
+  &__form-item &__form-checkbox:after {
+    transition: all 0.25s ease-in-out;
+  }
+
+  .flipIn,
+  &__form-item {
+    animation: flipdown 0.5s ease both;
+  }
+
+  &__form-item {
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 18px;
+    border-top: 1px solid $gray;
+  }
+
+  &__form-item:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+
+  &__form-item:nth-of-type(2) {
+    animation-delay: 0.75s;
+    margin-bottom: 45px;
+  }
+
+  &__form-item:last-of-type {
+    padding-bottom: 18px;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__form-checkbox {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+  }
+
+  &__form-checkbox:before,
+  &__form-checkbox:after {
+    content: "";
+    position: absolute;
+    background-color: $dark-blue;
+    width: 3px;
+    height: 9px;
+  }
+
+  &__form-checkbox:before {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  &__form-checkbox:after {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+
+  &__form-input {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__form-input:checked ~ &__form-text {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+
+  &__form-input:checked ~ &__form-checkbox:before {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+
+  &__form-input:checked ~ &__form-checkbox:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+
+  @keyframes flipdown {
+    0% {
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+    }
+    5% {
+      opacity: 1;
+    }
+    80% {
+      transform: rotateX(8deg);
+    }
+    83% {
+      transform: rotateX(6deg);
+    }
+    92% {
+      transform: rotateX(-3deg);
+    }
+    100% {
+      transform-origin: top center;
+      transform: rotateX(0deg);
+    }
+  }
+
+  &__form-inner {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__form-word {
+    margin-right: 15px;
+  }
+
+  &__form-label {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__form-name {
+    padding-left: 24px;
+  }
+
+  &__form-wrapper {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__form-check {
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+
+    &:checked + .product__form-checked::after {
+      opacity: 1;
+    }
+  }
+
+  &__form-checked {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: $dark-blue;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      display: block;
+      opacity: 0;
+      @extend %transition;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__form-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__form-cost {
+    font-size: 26px;
+    @extend %mplus-medium;
   }
 }
 

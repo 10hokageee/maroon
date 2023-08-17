@@ -7,13 +7,13 @@
   <title>Maroon</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
   
 <header class="header" style="background-image: url(images/header-bg.jpg);" > 
   <div class="header-wrapper">
   <div class="container">
     <nav class="header-menu">
-      <a class="logo" href="#">
+      <a class="logo" href="#body">
         <img class="logo__img" src="images/logo.svg" alt="Логотип">
       </a>
       <ul class="header-menu__items">
@@ -21,16 +21,17 @@
           <a class="header-menu__link link" href="#">Каталог</a>
         </li>
         <li class="header-menu__item">
-          <a class="header-menu__link link" href="#">О нас</a>
+          <a class="header-menu__link link" href="#about">О нас</a>
         </li>
         <li class="header-menu__item">
-          <a class="header-menu__link link" href="#">Контакты</a>
+          <a class="header-menu__link link" href="#contacts">Контакты</a>
         </li>
       </ul>
 
       <ul class="header-menu__usernav">
         <li class="header-menu__usernav-item">
           <button class="header-menu__usernav-btn">
+            <span class="sr-only">Мой аккаунт</span>
             <svg>
               <use xlink:href="images/sprite.svg#user"></use>
             </svg>
@@ -39,6 +40,7 @@
 
         <li class="header-menu__usernav-item">
           <button class="header-menu__usernav-btn">
+            <span class="sr-only">Корзина</span>
             <svg>
               <use xlink:href="images/sprite.svg#basket"></use>
             </svg>
@@ -54,6 +56,7 @@
     <div class="header__content-item">
        <img class="header__content-img" src="images/promo1.jpg" alt="">
        <a class="header__content-link link" href="#">Уход для лица
+        <span class="sr-only">Ссылка на подробную информацию о продукте</span>
         <svg>
           <use xlink:href="images/sprite.svg#arrow"></use>
         </svg>
@@ -68,8 +71,9 @@
     </div>
 
     <div class="header__content-item">
-      <img class="header__content-img" src="images/promo2.jpg" alt="">
+      <img class="header__content-img" src="images/promo2.jpg" alt="Изображение продукции">
       <a class="header__content-link link" href="#">Уход для тела
+        <span class="sr-only">Ссылка на подробную информацию о продукте</span>
         <svg>
           <use xlink:href="images/sprite.svg#arrow"></use>
         </svg>
@@ -81,7 +85,7 @@
 
 
  <main class="main">
-  <section class="benefits">
+  <section class="benefits section-padding">
     <div class="container">
       <div class="benefits__inner">
         <div class="benefits__content">
@@ -160,7 +164,7 @@
     </div>
   </section>
 
-  <section class="promo">
+  <section class="promo section-padding">
     <div class="promo__wrapper" style="background-image: url(images/promo-bg.jpg);">
     <div class="container">
       <div class="promo__content">
@@ -173,7 +177,7 @@
     </div>
   </section>
 
-  <section class="info">
+  <section class="info section-padding">
      <div class="container">
       <div class="info__inner" style="background-image: url(images/info-bg.jpg);">
 
@@ -194,7 +198,7 @@
      </div>
   </section>
 
-  <div class="advertisement">
+  <div class="advertisement section-padding">
     <div class="advertisement__content" style="background-image: url(images/advertisement-bg.jpg);">
       <p class="advertisement__text">
         “Мы стремимся сделать уход за кожей доступным
@@ -207,28 +211,28 @@
     </div>
 </div>
 
-<section class="join-block">
+<section class="join-block section-padding" id="about">
   <div class="container">
     <div class="join-block__inner">
 
       <ul class="join-block__items">
         <li class="join-block__item">
-          <img class="join-block__item-img" src="images/join-us/1.jpg" alt="">
+          <img class="join-block__item-img" src="images/join-us/1.jpg" alt="Декоративное изображение">
         </li>
         <li class="join-block__item">
-          <img class="join-block__item-img" src="images/join-us/2.jpg" alt="">
+          <img class="join-block__item-img" src="images/join-us/2.jpg" alt="Декоративное изображение">
         </li>
         <li class="join-block__item">
-          <img class="join-block__item-img" src="images/join-us/3.jpg" alt="">
+          <img class="join-block__item-img" src="images/join-us/3.jpg" alt="Декоративное изображение">
         </li>
         <li class="join-block__item">
-          <img class="join-block__item-img" src="images/join-us/4.jpg" alt="">
+          <img class="join-block__item-img" src="images/join-us/4.jpg" alt="Декоративное изображение">
         </li>
         <li class="join-block__item">
-          <img class="join-block__item-img" src="images/join-us/5.jpg" alt="">
+          <img class="join-block__item-img" src="images/join-us/5.jpg" alt="Декоративное изображение">
         </li>
         <li class="join-block__item">
-          <img class="join-block__item-img" src="images/join-us/6.jpg" alt="">
+          <img class="join-block__item-img" src="images/join-us/6.jpg" alt="Декоративное изображение">
         </li>
       </ul>
 
@@ -242,7 +246,7 @@
   </div>
 </section>
 
-<section class="contacts">
+<section class="contacts section-padding" id="contacts">
 
   <div class="container">   
     <div class="contacts__inner">
@@ -269,9 +273,10 @@
           </li>
         </ul>
 
-        <ul class="contact-socials">
+        <ul class="contact-socials">Декоративное изображение
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">фейсбук</span>
               <svg>
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
@@ -279,6 +284,7 @@
           </li>
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">инстаграмм</span>
               <svg>
                 <use xlink:href="images/sprite.svg#inst"></use>
               </svg>
@@ -286,6 +292,7 @@
           </li>
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">твиттер</span>
               <svg>
                 <use xlink:href="images/sprite.svg#twitter"></use>
               </svg>
@@ -308,8 +315,8 @@
     <div class="container">
       <div class="footer__inner">
 
-        <a class="footer__logo logo" href="#">
-          <img class="footer__logo-img" src="images/logo.svg" alt="">
+        <a class="footer__logo logo" href="#body">
+          <img class="footer__logo-img" src="images/logo.svg" alt="Логотип">
         </a>
 
         <ul class="footer__list-items">
@@ -317,19 +324,20 @@
             <a class="footer__list-link link" href="#">Каталог</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link link" href="#">О нас</a>
+            <a class="footer__list-link link" href="#about">О нас</a>
           </li>
           <li class="footer__list-item">
             <a class="footer__list-link link" href="#">Магазины</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link link" href="#">Контакты</a>
+            <a class="footer__list-link link" href="#contacts">Контакты</a>
           </li>
         </ul>
 
         <ul class="contact-socials">
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка фейсбука</span>
               <svg>
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
@@ -337,6 +345,7 @@
           </li>
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка инстаграмма</span>
               <svg>
                 <use xlink:href="images/sprite.svg#inst"></use>
               </svg>
@@ -344,6 +353,7 @@
           </li>
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка твиттера</span>
               <svg>
                 <use xlink:href="images/sprite.svg#twitter"></use>
               </svg>

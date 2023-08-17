@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maroon</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body id="body">
+  
+<header class="header">
+  <div class="header-wrapper">
+  <div class="container">
+    <nav class="header-menu">
+      <a class="logo" href="#body">
+        <img class="logo__img" src="images/logo.svg" alt="Логотип">
+      </a>
+      <ul class="header-menu__items">
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="#">Каталог</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="#">О нас</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="header-menu__usernav">
+        <li class="header-menu__usernav-item">
+          <button class="header-menu__usernav-btn">
+            <span class="sr-only">Мой аккаунт</span>
+            <svg>
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg>
+          </button>
+        </li>
+
+        <li class="header-menu__usernav-item">
+          <button class="header-menu__usernav-btn">
+            <span class="sr-only">Корзина</span>
+            <svg>
+              <use xlink:href="images/sprite.svg#basket"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</header>
+
+
+<main class="main">
+<section class="product section-padding">
+  <div class="container">
+    <div class="product__inner">
+      <img class="product__img" width="630" height="647" src="images/product/product1.jpg" alt="Картинка крема">
+      <form class="product__form" action="#">
+       <h2 class="product__form-title title">Rose
+        <span>крем для лица</span>
+       </h2>
+       <p class="product__form-info">
+        Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. 
+      </p>
+
+     <ul class="product__form-list">
+          <li class="product__form-item">
+           <input class="product__form-input" type="checkbox" checked>
+           <i class="product__form-checkbox"></i>
+            <span class="product__form-subtitle">Состав</span>
+            <p class="product__form-text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+          </li>
+          <li class="product__form-item">
+            <input class="product__form-input" type="checkbox" checked>
+            <i class="product__form-checkbox"></i>    
+            <span class="product__form-subtitle">Способ применения</span>
+            <p class="product__form-text">Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз. Подходит для дневного
+           и ночного ухода. </p>
+          </li>
+        </ul>
+
+       
+        <div class="product__form-inner">
+          <p class="product__form-word">Объем:</p>
+            <label class="product__form-label">
+          <span class="product__form-name">50ml</span>
+          <div class="product__form-wrapper">
+            <input class="product__form-check" type="checkbox">
+            <span class="product__form-checked"></span>
+          </div>  
+        </label>
+     
+        <label class="product__form-label">
+          <span class="product__form-name">30ml</span>
+          <div class="product__form-wrapper">
+            <input class="product__form-check" type="checkbox">
+            <span class="product__form-checked"></span>
+          </div>  
+        </label>
+      </div>
+
+      <div class="product__form-price">
+          <span class="product__form-cost">890₽</span>
+          <button class="product__form-btn btn">Добавить в корзину</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <section class="addition section-padding">
+    <div class="container">
+      <h2 class="addition__title title">Вам также может понравиться</h2>
+      <ul class="addition__items">
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/8.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">
+            <h3 class="card-catalog__list-name">
+              Clean
+              <span>маска для лица</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              490₽ 
+              <span>100g</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/11.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">  
+            <h3 class="card-catalog__list-name">
+              Lotos
+              <span>маска для лица</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              890₽ 
+              <span>50ml</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/12.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">
+            <h3 class="card-catalog__list-name">
+              Earth
+              <span>бомбочка для ванны</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              90₽
+              <span>20g</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/10.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">
+            <h3 class="card-catalog__list-name">
+              Lavender
+              <span>мыло ручной работы</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              290₽ 
+              <span>50g</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <ul class="pagination__items">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+        </ul>
+
+        <div class="pagination__arrows">       
+          <a class="pagination__arrow pagination__arrow--prev" href="#">
+            <span class="sr-only">Кнопка предыдущая страница</span>
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+        <a class="pagination__arrow pagination__arrow--next" href="#">
+          <span class="sr-only">Кнопка следующая страница</span>
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+ </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+    <div class="container">
+      <div class="footer__inner">
+
+        <a class="footer__logo" href="#body">
+          <img class="footer__logo-img" src="images/logo.svg" alt="Логотип">
+        </a>
+
+        <ul class="footer__list-items">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Каталог</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">О нас</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Магазины</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="contact-socials">
+          <li class="contact-socials__item">
+            <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка фейсбука</span>
+              <svg>
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-socials__item">
+            <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка инстаграмма</span>
+              <svg>
+                <use xlink:href="images/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-socials__item">
+            <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка твиттера</span>
+              <svg>
+                <use xlink:href="images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+         <div class="footer-bottom__inner">
+          <p class="footer-bottom__copyright">Maroon Ⓒ 2020 Все права защищены</p>
+          <a class="footer-bottom__link" href="#">Политика конфиденциальности</a>
+         </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
+

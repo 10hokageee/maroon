@@ -17,4 +17,32 @@ $(function(){
     
    });
 
+
+   $(window).on("scroll", function (){
+    if ($(window).scrollTop() > 50) {
+      $(".header-wrapper").addClass("header-fixed");
+    } else {
+      $(".header-wrapper").removeClass("header-fixed");
+    }
+  });
+
+  $(".header-menu__link, .logo, .footer__logo").on("click", function(event){
+    event.preventDefault();
+    const scrollAnchor = $(this).attr("href");
+    let scrollPoint = $(scrollAnchor).offset().top;
+  
+    if (scrollAnchor === "#home") {
+      scrollPoint = scrollPoint;
+  
+    }
+  
+    $("html, body").animate (
+      {
+        scrollTop: scrollPoint,
+      },
+      1500
+    );
+  return false;
+  });
 });
+

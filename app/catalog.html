@@ -7,30 +7,31 @@
   <title>Maroon</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
   
 <header class="header">
   <div class="header-wrapper">
   <div class="container">
     <nav class="header-menu">
-      <a class="logo" href="#">
+      <a class="logo" href="#body">
         <img class="logo__img" src="images/logo.svg" alt="Логотип">
       </a>
       <ul class="header-menu__items">
         <li class="header-menu__item">
-          <a class="header-menu__link link" href="#">Каталог</a>
+          <a class="header-menu__link link header-menu__link--active" href="#">Каталог</a>
         </li>
         <li class="header-menu__item">
           <a class="header-menu__link link" href="#">О нас</a>
         </li>
         <li class="header-menu__item">
-          <a class="header-menu__link link" href="#">Контакты</a>
+          <a class="header-menu__link link" href="#contacts">Контакты</a>
         </li>
       </ul>
 
       <ul class="header-menu__usernav">
         <li class="header-menu__usernav-item">
           <button class="header-menu__usernav-btn">
+            <span class="sr-only">Мой аккаунт</span>
             <svg>
               <use xlink:href="images/sprite.svg#user"></use>
             </svg>
@@ -39,6 +40,7 @@
 
         <li class="header-menu__usernav-item">
           <button class="header-menu__usernav-btn">
+            <span class="sr-only">Корзина</span>
             <svg>
               <use xlink:href="images/sprite.svg#basket"></use>
             </svg>
@@ -52,7 +54,7 @@
 
 
  <main class="main">
-  <section class="catalog">
+  <section class="catalog section-padding">
     <div class="container">
 
       <div class="catalog-top">
@@ -192,13 +194,426 @@
         </form>        
      </div>
 
+   
+      <ul class="catalog__list-items">
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/1.jpg);">
+          <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">
+              <h3 class="card-catalog__list-name">
+                High
+                <span>крем для лица</span>
+              </h3>
+              <span class="card-catalog__list-price">
+                990₽
+                <span>50ml</span>
+              </span>
+            </div>
+          </a>
+        </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/2.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Rest
+            <span>минеральная пудра</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            690₽
+            <span>20g</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/3.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Rose
+            <span>крем для лица</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            890₽
+            <span>50ml</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/4.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Milk
+            <span>масло для тела</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            790₽ 
+            <span>150ml</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/5.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Paradise
+            <span>минеральная пудра</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            590₽ 
+            <span>15g</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/6.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Sun
+            <span>бомбочка для ванны</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            90₽ 
+            <span>20g</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/7.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Violet
+            <span>крем для лица</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            890₽ 
+            <span>50ml</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/8.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Clean
+            <span>маска для лица</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            490₽ 
+            <span>100g</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/9.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Coconut
+            <span>масло для тела</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            990₽ 
+            <span>300ml</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/10.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Lavender
+            <span>мыло ручной работы</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            290₽ 
+            <span>50g</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/11.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">  
+          <h3 class="card-catalog__list-name">
+            Lotos
+            <span>маска для лица</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            890₽ 
+            <span>50ml</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+        <li class="catalog__list-item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/12.jpg);">
+          <a class="card-catalog__list-link" href="#">
+          <div class="card-catalog__list-content">
+          <h3 class="card-catalog__list-name">
+            Earth
+            <span>бомбочка для ванны</span>
+          </h3>
+          <span class="card-catalog__list-price">
+            90₽
+            <span>20g</span>
+          </span>
+        </div>
+      </a>
+    </article>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <ul class="pagination__items">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">8</a>
+          </li>
+        </ul>
+
+        <div class="pagination__arrows">       
+          <a class="pagination__arrow pagination__arrow--prev" href="#">
+            <span class="sr-only">Кнопка предыдущая страница</span>
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+        <a class="pagination__arrow pagination__arrow--next" href="#">
+          <span class="sr-only">Кнопка следующая страница</span>
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+      </div>
+
     </div>
   </section>
 
-  <section>
-    dasdasdasdasdas
-    
+  <section class="addition section-padding">
+    <div class="container">
+      <h2 class="addition__title title">Вам также может понравиться</h2>
+      <ul class="addition__items">
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/8.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">
+            <h3 class="card-catalog__list-name">
+              Clean
+              <span>маска для лица</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              490₽ 
+              <span>100g</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/11.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">  
+            <h3 class="card-catalog__list-name">
+              Lotos
+              <span>маска для лица</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              890₽ 
+              <span>50ml</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/12.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">
+            <h3 class="card-catalog__list-name">
+              Earth
+              <span>бомбочка для ванны</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              90₽
+              <span>20g</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+        <li class="addition__item">
+          <article class="card-catalog" style="background-image: url(images/catalog-cards/10.jpg);">
+            <a class="card-catalog__list-link" href="#">
+            <div class="card-catalog__list-content">
+            <h3 class="card-catalog__list-name">
+              Lavender
+              <span>мыло ручной работы</span>
+            </h3>
+            <span class="card-catalog__list-price">
+              290₽ 
+              <span>50g</span>
+            </span>
+          </div>
+        </a>
+      </article>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <ul class="pagination__items">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+        </ul>
+
+        <div class="pagination__arrows">       
+          <a class="pagination__arrow pagination__arrow--prev" href="#">
+            <span class="sr-only">Кнопка предыдущая страница</span>
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+        <a class="pagination__arrow pagination__arrow--next" href="#">
+          <span class="sr-only">Кнопка следующая страница</span>
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+      </div>
+    </div>
   </section>
+
+  <section class="join-block section-padding">
+    <div class="container">
+      <div class="join-block__inner">
+  
+        <ul class="join-block__items">
+          <li class="join-block__item">
+            <img class="join-block__item-img" src="images/join-us/1.jpg" alt="Декоративные изображения">
+          </li>
+          <li class="join-block__item">
+            <img class="join-block__item-img" src="images/join-us/2.jpg" alt="Декоративные изображения">
+          </li>
+          <li class="join-block__item">
+            <img class="join-block__item-img" src="images/join-us/3.jpg" alt="Декоративные изображения">
+          </li>
+          <li class="join-block__item">
+            <img class="join-block__item-img" src="images/join-us/4.jpg" alt="Декоративные изображения">
+          </li>
+          <li class="join-block__item">
+            <img class="join-block__item-img" src="images/join-us/5.jpg" alt="Декоративные изображения">
+          </li>
+          <li class="join-block__item">
+            <img class="join-block__item-img" src="images/join-us/6.jpg" alt="Декоративные изображения">
+          </li>
+        </ul>
+  
+        <div class="join-block__content">
+          <h2 class="join-block__title title">Присоединяйтесь к нам</h2>
+          <p class="join-block__text">Подпишитесь на наш аккаунт @marooncare
+            и узнавайте о новиках и акциях первыми</p>
+            <a class="join-block__btn btn" href="#">Подписаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contacts section-padding" id="contacts">
+  
+    <div class="container">   
+      <div class="contacts__inner">
+  
+         <div class="contacts__content">
+          <ul class="contacts__list-items">
+            <li><h2 class="contacts__title title">Контакты</h2></li>
+            <li class="contacts__list-item">
+              <span class="contacts__list-subtitle">Адрес</span> 
+              <address class="contacts__list-address">
+                Санкт-Петербург,
+                ул. Большая Конюшенная, 19
+              </address>       
+            </li>
+      
+            <li class="contacts__list-item">
+              <span class="contacts__list-subtitle">Телефон</span> 
+              <a class="contacts__list-link link" href="tel:+7(923)8889060">+7 (923) 888-90-60</a>  
+            </li>
+      
+            <li class="contacts__list-item">
+              <span class="contacts__list-subtitle">E-mail</span> 
+              <a class="contacts__list-link link" href="mailto:info@maroon.ru">info@maroon.ru</a>    
+            </li>
+          </ul>
+  
+          <ul class="contact-socials">
+            <li class="contact-socials__item">
+              <a class="contact-socials__link" href="#">
+                <span class="sr-only">Иконка фейсбука</span>
+                <svg>
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact-socials__item">
+              <a class="contact-socials__link" href="#">
+                <span class="sr-only">Иконка инстаграмма</span>
+                <svg>
+                  <use xlink:href="images/sprite.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact-socials__item">
+              <a class="contact-socials__link" href="#">
+                <span class="sr-only">Иконка твиттера</span>
+                <svg>
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul> 
+         </div>
+      
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.8793830638!2d36.121019303051675!3d49.99469535716108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2s!4v1692120960965!5m2!1sru!2s" width="670" height="422" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div> 
+    </div>
+  </section>
+
  </main>
 
   <footer class="footer">
@@ -206,8 +621,8 @@
     <div class="container">
       <div class="footer__inner">
 
-        <a class="footer__logo" href="#">
-          <img class="footer__logo-img" src="images/logo.svg" alt="">
+        <a class="footer__logo" href="#body">
+          <img class="footer__logo-img" src="images/logo.svg" alt="Логотип">
         </a>
 
         <ul class="footer__list-items">
@@ -228,6 +643,7 @@
         <ul class="contact-socials">
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка фейсбука</span>
               <svg>
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
@@ -235,6 +651,7 @@
           </li>
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка инстаграмма</span>
               <svg>
                 <use xlink:href="images/sprite.svg#inst"></use>
               </svg>
@@ -242,6 +659,7 @@
           </li>
           <li class="contact-socials__item">
             <a class="contact-socials__link" href="#">
+              <span class="sr-only">Иконка твиттера</span>
               <svg>
                 <use xlink:href="images/sprite.svg#twitter"></use>
               </svg>
